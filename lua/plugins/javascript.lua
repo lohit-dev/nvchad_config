@@ -1,0 +1,23 @@
+return {
+  {
+    "vuki656/package-info.nvim",
+    dependencies = "MunifTanjim/nui.nvim",
+    ft = { "json", "package.json" },
+    config = function()
+      require("package-info").setup()
+    end,
+  },
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+    opts = {},
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    ft = { "javascriptreact", "typescriptreact" },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+}
