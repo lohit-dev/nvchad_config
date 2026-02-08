@@ -22,7 +22,7 @@ map("n", "<leader>bt", function()
 end, { desc = "Toggle tabline" })
 
 -- Harpoon
-map("n", "<leader>a", function()
+map("n", "<leader>ja", function()
   require("harpoon"):list():add()
 end, { desc = "Harpoon add" })
 map("n", "<leader>mm", function()
