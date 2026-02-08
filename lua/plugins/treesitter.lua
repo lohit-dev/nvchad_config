@@ -4,7 +4,7 @@ return {
     event = { "BufReadPost", "BufNewFile" },
     cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
     build = ":TSUpdate",
-    dependencies = { "windwp/nvim-ts-autotag" }, 
+    dependencies = { "windwp/nvim-ts-autotag" },
     opts = {
       ensure_installed = {
         "html",

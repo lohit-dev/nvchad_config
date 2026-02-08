@@ -6,6 +6,7 @@ return {
   { import = "plugins.rust" },
   { import = "plugins.javascript" },
   { import = "plugins.harpoon" },
+  { import = "plugins.ai" },
 
 
   {
