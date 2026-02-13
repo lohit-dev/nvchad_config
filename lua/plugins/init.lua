@@ -31,6 +31,16 @@ return {
       return opts
     end,
   },
+  -- Override NvChad's nvim-tree: show gitignored and dotfiles (e.g. .env, .gitignore)
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = function(_, opts)
+      opts = opts or {}
+      opts.git = vim.tbl_extend("force", opts.git or {}, { ignore = false })
+      opts.filters = vim.tbl_extend("force", opts.filters or {}, { dotfiles = false })
+      return opts
+    end,
+  },
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
