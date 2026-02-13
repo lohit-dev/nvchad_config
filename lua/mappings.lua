@@ -9,6 +9,11 @@ map("n", "<A-h>", "<cmd>vertical resize -1<cr>", { desc = "Resize width -" })
 map("n", "<A-l>", "<cmd>vertical resize +1<cr>", { desc = "Resize width +" })
 map("n", "<leader>fp", "<cmd>Telescope projects<cr>", { desc = "Find projects" })
 
+-- Cursor Agent (keymaps here so which-key picks them up)
+map("n", "<leader>ca", "<cmd>CursorAgent<cr>", { desc = "Toggle terminal" })
+map("v", "<leader>ca", "<cmd>CursorAgentSelection<cr>", { desc = "Send selection" })
+map("n", "<leader>cA", "<cmd>CursorAgentBuffer<cr>", { desc = "Send buffer" })
+
 -- Buffer (tabufline)
 map("n", "<leader>b", "<nop>", { desc = "buffer (disabled)" })
 map("n", "<leader>br", function()
